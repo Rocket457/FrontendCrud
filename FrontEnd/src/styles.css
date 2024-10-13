@@ -1,0 +1,282 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Cores principais */
+    --color-text-primary: #F2F0FF;
+    --color-text-secondary: #B5B9BC;
+    --color-background: #221C3E;
+    --color-background-secondary: #191131;
+    --color-modal-background: #0F0920;
+    --color-accent: #221C3E;
+    --color-primary: #3D6FFF;
+    --color-secondary: #FF007A;
+
+    /* Gradientes */
+    --gradient-1: linear-gradient(90deg, #0368FF 0%, #FF3985 100%);
+    --gradient-2: linear-gradient(90deg, #0368FF 0%, #5899FF 100%);
+
+    /* Sombras */
+    --shadow-none: 0 0 0 0 rgba(0, 0, 0, 0);
+    --shadow-low: 6px 6px 12px rgba(0, 0, 0, 0.18);
+    --shadow-middle: 10px 10px 20px rgba(0, 0, 0, 0.32);
+    --shadow-high: 10px 10px 24px rgba(0, 0, 0, 0.48);
+    --shadow-extra-high: 10px 10px 24px rgba(0, 0, 0, 0.64);
+}
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: Medium;
+    color: var(--color-text-primary);
+}
+
+body {
+    background-color: var(--color-background)
+}
+
+/* Tipografia */
+.large-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.h1-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: regular;
+}
+
+.h2-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: regular;
+}
+
+.h3-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: medium;
+}
+
+.body1-default, .button-default, .basic-button, th, td {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: regular;
+}
+
+.body1-bold {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.body1-italic {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Outras variações */
+.body2-default {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: regular;
+}
+
+.caption-default, .caption-bold, .caption-italic {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+.caption-bold {
+    font-weight: bold;
+}
+
+.caption-italic {
+    font-style: italic;
+}
+
+.assistive-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+}
+
+.assistive-text-bold {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.assistive-text-italic {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.text-color-secondary {
+    color: var(--color-text-secondary);
+}
+
+.background-color {
+    background-color: var(--color-background);
+}
+
+.accent-color {
+    color: var(--color-accent);
+}
+
+.primary-color {
+    color: var(--color-primary);
+}
+
+.secondary-color {
+    color: var(--color-secondary);
+}
+
+.gradient1 {
+    background: var(--gradient-1);
+}
+
+.gradient2 {
+    background: var(--gradient-2);
+}
+
+
+/* Sombras */
+.shadow-none {
+    box-shadow: var(--shadow-none);
+}
+
+.shadow-low {
+    box-shadow: var(--shadow-low);
+}
+
+.shadow-middle {
+    box-shadow: var(--shadow-middle);
+}
+
+.shadow-high {
+    box-shadow: var(--shadow-high);
+}
+
+.shadow-extra-high {
+    box-shadow: var(--shadow-extra-high);
+}
+
+/* Botões */
+.button-primary {
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+    border-radius: 6px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-primary:hover {
+    background-color: #0056D2; /* Pode-se definir uma nova variável para hover se necessário */
+}
+
+.button-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-text-primary);
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.button-basic {
+    background-color: transparent;
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-text-primary);
+    padding: 10px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+
+/* Chips */
+.chip-filled {
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+    border-radius: 16px;
+    padding: 4px 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.chip-stroke {
+    background-color: transparent;
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-text-primary);
+    border-radius: 16px;
+    padding: 4px 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+/* Tooltip */
+.tooltip {
+    background-color: #3D6FFF;
+    color: #FFFFFF;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+ /* Inputs */ 
+ .input-container {
+    position: relative;
+    width: 250px; /* Ajuste conforme necessário */
+}
+
+.input-field {
+    
+    padding: 10px 15px;
+    font-size: 16px;
+    color: var(--color-text-primary);
+    background-color: transparent;
+    border: 1px solid var(--color-text-primary);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.floating-label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 16px;
+    color: var(--color-text-primary);
+    background-color: var(--color-background-secondary);
+    padding: 0 5px;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.input-field:focus::placeholder {
+    color: transparent;
+    transition: color 0.3s, visibility 0.3s ease;
+}
+
+.input-field::placeholder {
+    transition: color 0.5s ease; /* Transição ao reaparecer */
+    color: var(--color-text-primary); /* Cor padrão do placeholder */
+}
+
+.input-field:focus + .floating-label {
+    opacity: 1;
+    visibility: visible; /* Aparece apenas quando o input está em foco */
+}
+
+.input-field:focus {
+    border-color: var(--color-border-focus);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}

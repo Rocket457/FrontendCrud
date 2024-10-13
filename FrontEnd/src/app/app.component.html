@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>Produtos</h1>
+    <div class="search-create-wrapper">
+        <app-search (searchEvent)="onSearchTriggered($event)" class="search"></app-search>
+        <app-create-button class="create"></app-create-button>
+    </div>
+    <app-read [produtos]="produtos" [loading]="loading"  class="read"></app-read>
+</div>

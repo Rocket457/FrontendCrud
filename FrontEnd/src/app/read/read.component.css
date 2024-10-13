@@ -1,0 +1,41 @@
+
+.read {
+    width: 100%;
+    margin-top: 20px; 
+    overflow-x: auto; 
+}
+
+.table {
+    width: 100%;
+    height: 70%;
+    border-collapse: collapse;
+    background-color: var(--color-modal-background);
+    color: var(--color-text-primary);
+    font-family: 'Lato', sans-serif;
+    box-shadow: var(--shadow-low);
+}
+
+.table th, .table td {
+    padding: 6px 7.5px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.table th {
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+    font-weight: bold;
+}
+
+.table tr:hover {
+    background-color: var(--color-accent) !important;
+}
+
+.table .price {
+    text-align: right;
+}
+
+/* Alternância de cores nas linhas */
+.table tr:nth-child(even) {
+    background-color: var(--color-background-secondary) ; /* Cor ligeiramente mais clara para as linhas pares */
+}
